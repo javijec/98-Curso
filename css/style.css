@@ -91,12 +91,15 @@ footer {
 
 }
 
+.push {
+    margin-left: auto;
+  }
+
 @media only screen and (max-width: 575px) {
     .img-footer {
         height: 50px;
         width: 50px;
-
-    }
+     }
 }
 
 /* Fin de estilo footer  */
