@@ -19,8 +19,12 @@ body{
 
 /* Estilo header */
 .navbar{
-    background-color: #ebebeb;
+    background-color: #ebebebbd;
     text-transform: uppercase
+}
+
+.item-menu:hover{
+    font-weight: bolder !important;
 }
 .lista{
     list-style: none;
