@@ -1,0 +1,84 @@
+/* EStilo general */
+
+*{  
+    font-family: 'Roboto', sans-serif;
+}
+
+/* fin estilo general */
+
+/* Estilo header */
+.navbar{
+    background-color: #ebebeb;
+}
+.lista{
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+}
+
+.enlace-nav{
+    color: rgb(128, 128, 128);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+.img-pricipal {
+    height: 100px;
+}
+
+/* Fin de estilo header  */
+
+/* Estilo main */
+h1{
+    text-transform: uppercase;
+}
+h2{
+    color: #003465;
+}
+.link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.lista3{
+    list-style: none;
+}
+
+/* Fin de estilo main  */
+
+/* Estilo footer */
+
+footer{ 
+    background-color: #252850;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.img-footer{
+    height: 150px;
+    width: 150px;
+
+}
+
+@media only screen and (max-width: 575px) {
+    .img-footer{
+        height: 100px;
+        width: 100px;
+    
+    }
+}
+
+
+
+
+/* Fin de estilo footer  */
+
+
+
+
