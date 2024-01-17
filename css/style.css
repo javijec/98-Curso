@@ -4,11 +4,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
 /* fin estilo general */
 
 /* Estilo header */
 .navbar{
     background-color: #ebebeb;
+    text-transform: uppercase
 }
 .lista{
     list-style: none;
@@ -32,6 +44,9 @@
 /* Fin de estilo header  */
 
 /* Estilo main */
+main{
+    margin: 2vh 2vw 2vh 2vw !important; 
+}
 h1{
     text-transform: uppercase;
 }
@@ -57,7 +72,7 @@ footer{
     display: flex;
     padding-left: 0px;
     padding-right: 0px;
-
+    margin-top: auto;
 }
 
 .img-footer{
@@ -73,10 +88,6 @@ footer{
     
     }
 }
-
-
-
-
 /* Fin de estilo footer  */
 
 
