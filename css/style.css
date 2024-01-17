@@ -1,15 +1,15 @@
 /* EStilo general */
 
-*{  
+* {
     font-family: 'Roboto', sans-serif;
 }
 
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -18,22 +18,23 @@ body{
 /* fin estilo general */
 
 /* Estilo header */
-.navbar{
+.navbar {
     background-color: #ebebebbd;
     text-transform: uppercase
 }
 
-.item-menu:hover{
+.item-menu:hover {
     font-weight: bolder !important;
 }
-.lista{
+
+.lista {
     list-style: none;
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
 }
 
-.enlace-nav{
+.enlace-nav {
     color: rgb(128, 128, 128);
     text-decoration: none;
     font-size: 1.1rem;
@@ -48,52 +49,54 @@ body{
 /* Fin de estilo header  */
 
 /* Estilo main */
-main{
-    margin: 2vh 2vw 2vh 2vw !important; 
+main {
+    margin: 2vh 2vw 2vh 2vw !important;
 }
-h1{
+
+h1 {
     text-transform: uppercase;
 }
-h2{
+
+h2 {
     color: #003465;
 }
-.link{
+
+.link {
     color: #000000;
     text-decoration: none;
 }
 
-.lista3{
+.lista3 {
     list-style: none;
 }
 
+.imagen2{
+    max-width: 600px !important;
+}
 /* Fin de estilo main  */
 
 /* Estilo footer */
 
-footer{ 
+footer {
     background-color: #252850;
     color: rgb(255, 255, 255);
     display: flex;
-    padding-left: 0px;
-    padding-right: 0px;
     margin-top: auto;
+    padding: 2vh 2vw 2vh 2vw !important;
 }
 
-.img-footer{
+.img-footer {
     height: 150px;
     width: 150px;
 
 }
 
 @media only screen and (max-width: 575px) {
-    .img-footer{
+    .img-footer {
         height: 100px;
         width: 100px;
-    
+
     }
 }
+
 /* Fin de estilo footer  */
-
-
-
-
