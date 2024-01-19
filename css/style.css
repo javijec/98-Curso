@@ -1,105 +1,109 @@
 /* EStilo general */
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* fin estilo general */
 
 /* Estilo header */
 .navbar {
-    background-color: #ebebebbd;
-    text-transform: uppercase
+  background-color: #ebebebbd;
+  text-transform: uppercase;
 }
 
 .item-menu:hover {
-    font-weight: bolder !important;
+  font-weight: bolder !important;
 }
 
 .lista {
-    list-style: none;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-around;
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
 }
 
 .enlace-nav {
-    color: rgb(128, 128, 128);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-
+  color: rgb(128, 128, 128);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .img-pricipal {
-    height: 100px;
+  height: 100px;
 }
 
 /* Fin de estilo header  */
 
 /* Estilo main */
 main {
-    margin: 2vh 2vw 2vh 2vw !important;
+  margin: 2vh 2vw 2vh 2vw !important;
 }
 
 h1 {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h2 {
-    color: #003465;
+  color: #003465;
 }
 
 .link {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .lista3 {
-    list-style: none;
+  list-style: none;
 }
 
-.imagen2{
-    max-width: 600px !important;
+.imagen2 {
+  max-width: 600px !important;
 }
 /* Fin de estilo main  */
 
 /* Estilo footer */
 
 footer {
-    background-color: #252850;
-    color: rgb(255, 255, 255);
-    display: flex;
-    margin-top: auto;
-    padding: 2vh 2vw 2vh 2vw !important;
+  background-color: #252850;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin-top: auto;
+  padding: 2vh 2vw 2vh 2vw !important;
 }
 
 .img-footer {
-    height: 150px;
-    width: 150px;
-
+  height: 150px;
+  width: 150px;
 }
 
 .push {
-    margin-left: auto;
-  }
+  margin-left: auto;
+}
 
 @media only screen and (max-width: 575px) {
-    .img-footer {
-        height: 50px;
-        width: 50px;
-     }
+  .img-footer {
+    height: 50px;
+    width: 50px;
+  }
 }
+
+@media only screen and (max-width: 575px) and (max-width: 720px) {
+    .img-footer {
+      height: 75px;
+      width: 75px;
+    }
+  }
 
 /* Fin de estilo footer  */
