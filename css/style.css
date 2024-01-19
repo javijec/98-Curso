@@ -92,14 +92,14 @@ footer {
   margin-left: auto;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 480px) {
   .img-footer {
     height: 50px;
     width: 50px;
   }
 }
 
-@media only screen and (max-width: 575px) and (max-width: 720px) {
+@media only screen and (min-width: 480px) and (max-width: 720px) {
     .img-footer {
       height: 75px;
       width: 75px;
