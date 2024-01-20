@@ -54,6 +54,11 @@ main {
   margin: 2vh 2vw 2vh 2vw !important;
 }
 
+.historia {
+  border: #000000;
+  border-style: dashed;
+}
+
 h1 {
   text-transform: uppercase;
 }
