@@ -24,6 +24,8 @@ main {
   width: 300px;
   margin-left: 15px;
   margin-bottom: 10px;
+  max-width: 600px;
+  min-width: 330px;
 }
 .imgarea {
   max-width: 200px;
@@ -39,6 +41,7 @@ main {
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
+    min-width: 200px;
   }
   .imgarea {
     width: 29vw;
@@ -48,7 +51,6 @@ main {
 @media only screen and (min-width: 481px) and (max-width: 720px) {
   .imgfloat {
     width: 50%;
-    min-width: 330px;
   }
   .imgarea {
     width: 29vw;
@@ -58,7 +60,6 @@ main {
 @media only screen and (min-width: 1067px) {
   .imgfloat {
     width: 50%;
-    min-width: 330px;
   }
   .imgarea {
     width: 15vw;
