@@ -34,17 +34,37 @@ main p {
   margin-bottom: 10px;
 }
 
+.imgarea {
+  max-width: 200px;
+  width: 20vw;
+}
+
 @media only screen and (max-width: 480px) {
   .imgfloat {
     width: 100%;
     margin-left: 0;
     margin-bottom: 10px;
   }
+  .imgarea {
+    width: 29vw;
+  }
 }
 @media only screen and (min-width: 481px) and (max-width: 720px) {
   .imgfloat {
     width: 50%;
     min-width: 330px;
+  }
+  .imgarea {
+    width: 29vw;
+  }
+}
+@media only screen and (min-width: 1067px) {
+  .imgfloat {
+    width: 50%;
+    min-width: 330px;
+  }
+  .imgarea {
+    width: 15vw;
   }
 }
 footer {
