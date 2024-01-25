@@ -1,29 +1,29 @@
 footer {
-    background-color: #252850;
-    color: rgb(255, 255, 255);
-    display: flex;
-    margin-top: auto;
-    padding: 2vh 2vw 2vh 2vw !important;
+  background-color: #252850;
+  color: rgb(255, 255, 255);
+  display: flex;
+  margin-top: auto;
+  padding: 2vh 2vw 2vh 2vw !important;
 
-    img {
-        height: 150px;
-        width: 150px;
-      }
-      .push {
-        margin-left: auto;
-      }
+  .push {
+    margin-left: auto;
+  }
+  img {
+    height: 150px;
+    width: 150px;
   }
 
   @media only screen and (max-width: 480px) {
-    .img-footer {
+    img {
       height: 50px;
       width: 50px;
     }
   }
-  
+
   @media only screen and (min-width: 480px) and (max-width: 720px) {
-      .img-footer {
-        height: 75px;
-        width: 75px;
-      }
+    img {
+      height: 75px;
+      width: 75px;
     }
+  }
+}
