@@ -16,15 +16,10 @@ main {
 
   .imgfloat {
     float: right;
-    width: 300px;
     margin-left: 15px;
     margin-bottom: 10px;
-    max-width: 600px;
-    min-width: 330px;
   }
   .imgarea {
-    max-width: 200px;
-    width: 20vw;
     transition: all 0.2s;
     &:hover {
       transform: scale(1.05);
@@ -34,33 +29,32 @@ main {
     width: 50px;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: nth($tamanosPantalla,1)) {
     .imgfloat {
-      width: 100%;
+      @include ancho(100%, 200px, 600px);
       margin-left: 0px;
       margin-bottom: 10px;
-      min-width: 200px;
     }
     .imgarea {
-      width: 29vw;
+      @include ancho(29vw, 0, 200px);
     }
   }
 
-  @media only screen and (min-width: 481px) and (max-width: 720px) {
+  @media only screen and (min-width: nth($tamanosPantalla,2)) and (max-width: nth($tamanosPantalla,3)) {
     .imgfloat {
-      width: 50%;
+      @include ancho(50%, 330px, 600px);
     }
     .imgarea {
-      width: 29vw;
+      @include ancho(29vw, 0, 200px);
     }
   }
 
-  @media only screen and (min-width: 1067px) {
+  @media only screen and (min-width: nth($tamanosPantalla,4)) {
     .imgfloat {
-      width: 50%;
+      @include ancho(50%, 330px, 600px);
     }
     .imgarea {
-      width: 15vw;
+      @include ancho(15vw, 0, 200px);
     }
   }
 }

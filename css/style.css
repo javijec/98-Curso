@@ -24,15 +24,10 @@ main .imagen2 {
 }
 main .imgfloat {
   float: right;
-  width: 300px;
   margin-left: 15px;
   margin-bottom: 10px;
-  max-width: 600px;
-  min-width: 330px;
 }
 main .imgarea {
-  max-width: 200px;
-  width: 20vw;
   transition: all 0.2s;
 }
 main .imgarea:hover {
@@ -44,28 +39,39 @@ main .imagentel {
 @media only screen and (max-width: 480px) {
   main .imgfloat {
     width: 100%;
+    min-width: 200px;
+    max-width: 600px;
     margin-left: 0px;
     margin-bottom: 10px;
-    min-width: 200px;
   }
   main .imgarea {
     width: 29vw;
+    min-width: 0;
+    max-width: 200px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 720px) {
   main .imgfloat {
     width: 50%;
+    min-width: 330px;
+    max-width: 600px;
   }
   main .imgarea {
     width: 29vw;
+    min-width: 0;
+    max-width: 200px;
   }
 }
-@media only screen and (min-width: 1067px) {
+@media only screen and (min-width: 721px) {
   main .imgfloat {
     width: 50%;
+    min-width: 330px;
+    max-width: 600px;
   }
   main .imgarea {
     width: 15vw;
+    min-width: 0;
+    max-width: 200px;
   }
 }
 
@@ -84,7 +90,7 @@ footer img {
     width: 50px;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 720px) {
+@media only screen and (min-width: 481px) and (max-width: 720px) {
   footer img {
     height: 75px;
     width: 75px;

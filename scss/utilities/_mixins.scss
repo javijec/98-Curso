@@ -1,0 +1,5 @@
+@mixin ancho ($width, $min-width, $max-width){
+    width: $width;
+    min-width: $min-width;
+    max-width: $max-width;
+}
