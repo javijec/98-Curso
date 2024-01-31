@@ -1,20 +1,20 @@
 footer {
-  background-color: #252850;
-  color: rgb(255, 255, 255);
+  background-color: $color-fondo-footer;
+  color: $color-letras-footer;
   padding: 2vh 2vw 2vh 2vw !important;
    img {
     height: 150px;
     width: 150px;
   }
 
-  @media only screen and (max-width: 480px) {
+  @media only screen and (max-width: nth($tamanosPantalla,1)) {
     img {
       height: 50px;
       width: 50px;
     }
   }
 
-  @media only screen and (min-width: 480px) and (max-width: 720px) {
+  @media only screen and (min-width: nth($tamanosPantalla,2)) and (max-width: nth($tamanosPantalla,3)) {
     img {
       height: 75px;
       width: 75px;

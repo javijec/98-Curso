@@ -1,8 +1,10 @@
+@import "./base/lista";
 @import "./base/variables";
-
+@import "./utilities/mixins";
 @import "./components/header";
 @import "./components/main";
 @import "./components/footer";
+
 
 * {
     font-family: "Roboto", sans-serif;
