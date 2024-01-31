@@ -1,8 +1,8 @@
-nav {
+header nav {
   background-color: rgba(235, 235, 235, 0.7411764706);
   text-transform: uppercase;
 }
-nav li:hover {
+header nav li:hover {
   font-weight: bolder !important;
 }
 
@@ -19,12 +19,10 @@ main .lista {
 main p {
   text-align: justify;
 }
-
-.imagen2 {
+main .imagen2 {
   max-width: 600px !important;
 }
-
-.imgfloat {
+main .imgfloat {
   float: right;
   width: 300px;
   margin-left: 15px;
@@ -32,47 +30,45 @@ main p {
   max-width: 600px;
   min-width: 330px;
 }
-
-.imgarea {
+main .imgarea {
   max-width: 200px;
   width: 20vw;
-  transition: transform 0.2s;
+  transition: all 0.2s;
 }
-.imgarea:hover {
+main .imgarea:hover {
   transform: scale(1.05);
 }
-
-.imagentel {
+main .imagentel {
   width: 50px;
 }
-
 @media only screen and (max-width: 480px) {
-  .imgfloat {
+  main .imgfloat {
     width: 100%;
     margin-left: 0px;
     margin-bottom: 10px;
     min-width: 200px;
   }
-  .imgarea {
+  main .imgarea {
     width: 29vw;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 720px) {
-  .imgfloat {
+  main .imgfloat {
     width: 50%;
   }
-  .imgarea {
+  main .imgarea {
     width: 29vw;
   }
 }
 @media only screen and (min-width: 1067px) {
-  .imgfloat {
+  main .imgfloat {
     width: 50%;
   }
-  .imgarea {
+  main .imgarea {
     width: 15vw;
   }
 }
+
 footer {
   background-color: #252850;
   color: rgb(255, 255, 255);
@@ -94,8 +90,7 @@ footer img {
     width: 75px;
   }
 }
-
-.push {
+footer .push {
   margin-left: auto;
   margin-right: 0.5rem;
 }

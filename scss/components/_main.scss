@@ -10,58 +10,57 @@ main {
   p {
     text-align: justify;
   }
-}
-
-.imagen2 {
-  max-width: 600px !important;
-}
-
-.imgfloat {
-  float: right;
-  width: 300px;
-  margin-left: 15px;
-  margin-bottom: 10px;
-  max-width: 600px;
-  min-width: 330px;
-}
-.imgarea {
-  max-width: 200px;
-  width: 20vw;
-  transition: transform .2s;
-  &:hover {
-    transform: scale(1.05)
+  .imagen2 {
+    max-width: 600px !important;
   }
-}
-.imagentel{
-  width: 50px;
-}
 
-@media only screen and (max-width: 480px) {
   .imgfloat {
-    width: 100%;
-    margin-left: 0px;
+    float: right;
+    width: 300px;
+    margin-left: 15px;
     margin-bottom: 10px;
-    min-width: 200px;
+    max-width: 600px;
+    min-width: 330px;
   }
   .imgarea {
-    width: 29vw;
+    max-width: 200px;
+    width: 20vw;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
   }
-}
+  .imagentel {
+    width: 50px;
+  }
 
-@media only screen and (min-width: 481px) and (max-width: 720px) {
-  .imgfloat {
-    width: 50%;
+  @media only screen and (max-width: 480px) {
+    .imgfloat {
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: 10px;
+      min-width: 200px;
+    }
+    .imgarea {
+      width: 29vw;
+    }
   }
-  .imgarea {
-    width: 29vw;
-  }
-}
 
-@media only screen and (min-width: 1067px) {
-  .imgfloat {
-    width: 50%;
+  @media only screen and (min-width: 481px) and (max-width: 720px) {
+    .imgfloat {
+      width: 50%;
+    }
+    .imgarea {
+      width: 29vw;
+    }
   }
-  .imgarea {
-    width: 15vw;
+
+  @media only screen and (min-width: 1067px) {
+    .imgfloat {
+      width: 50%;
+    }
+    .imgarea {
+      width: 15vw;
+    }
   }
 }
