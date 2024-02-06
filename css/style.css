@@ -3,11 +3,11 @@ header nav {
   text-transform: uppercase;
 }
 header nav li:hover {
-  font-weight: bolder !important;
+  font-weight: bolder;
 }
 
 main {
-  margin: 2vh 2vw 2vh 2vw !important;
+  margin: 2vh 2vw 2vh 2vw;
 }
 main h1 {
   text-transform: uppercase;
@@ -20,7 +20,7 @@ main p {
   text-align: justify;
 }
 main .imagen2 {
-  max-width: 600px !important;
+  max-width: 600px;
 }
 main .imgfloat {
   float: right;
@@ -78,7 +78,7 @@ main .imagentel {
 footer {
   background-color: #252850;
   color: rgb(255, 255, 255);
-  padding: 2vh 2vw 2vh 2vw !important;
+  padding: 2vh 2vw 2vh 2vw;
 }
 footer img {
   height: 150px;
