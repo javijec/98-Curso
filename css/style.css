@@ -88,7 +88,7 @@ main .imagentel {
 main .accordion-header {
   --bs-accordion-active-color: none;
   --bs-accordion-active-bg: rgb(233, 232, 232);
-  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-border-color: rgb(233, 232, 232);
   --bs-accordion-btn-focus-box-shadow: none;
 }
 
