@@ -9,6 +9,10 @@ main {
   section{
     background-color: rgb(233, 232, 232);
     border-radius: 1.5vw;
+    div{
+      background-color: rgb(255, 255, 255);
+      padding: 3px;
+    }
   }
   .lista {
     list-style: none;
@@ -63,5 +67,12 @@ main {
     .imgarea {
       @include ancho(15vw, 0, 200px);
     }
+  }
+
+  .accordion-header{
+    --bs-accordion-active-color: none;
+    --bs-accordion-active-bg: rgb(233, 232, 232);
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
   }
 }

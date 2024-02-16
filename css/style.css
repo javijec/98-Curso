@@ -19,6 +19,10 @@ main section {
   background-color: rgb(233, 232, 232);
   border-radius: 1.5vw;
 }
+main section div {
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+}
 main .lista {
   list-style: none;
   padding: 0;
@@ -80,6 +84,12 @@ main .imagentel {
     min-width: 0;
     max-width: 200px;
   }
+}
+main .accordion-header {
+  --bs-accordion-active-color: none;
+  --bs-accordion-active-bg: rgb(233, 232, 232);
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
 }
 
 footer {
