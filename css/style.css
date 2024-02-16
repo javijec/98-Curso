@@ -1,5 +1,5 @@
 header nav {
-  background-color: rgba(235, 235, 235, 0.7411764706);
+  background-color: rgba(199, 199, 199, 0.7411764706);
   text-transform: uppercase;
 }
 header nav li:hover {
@@ -11,6 +11,10 @@ main {
 }
 main h1 {
   text-transform: uppercase;
+}
+main section {
+  background-color: rgb(233, 232, 232);
+  border-radius: 1.5vw;
 }
 main .lista {
   list-style: none;
