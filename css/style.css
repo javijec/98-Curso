@@ -1,9 +1,13 @@
 header nav {
-  background-color: rgba(199, 199, 199, 0.7411764706);
+  background-color: #252850;
   text-transform: uppercase;
 }
 header nav li:hover {
   font-weight: bolder;
+}
+
+.nav-link {
+  color: white;
 }
 
 main {
