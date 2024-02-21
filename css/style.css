@@ -52,6 +52,40 @@ main .imgarea:hover {
 main .imagentel {
   width: 50px;
 }
+main .extra1, main .extra2, main .extra3, main .extra4 {
+  display: none;
+}
+main input[type=checkbox] {
+  height: 2em;
+  display: block;
+  appearance: none;
+}
+main label {
+  position: relative;
+  padding: 1em;
+  background-color: #252850;
+  color: white;
+  cursor: pointer;
+}
+main label::before {
+  content: "MAS";
+}
+main input[type=checkbox]:checked ~ label::before {
+  content: "MENOS";
+}
+main .dots1:has(~ input[type=checkbox]:checked),
+main .dots2:has(~ input[type=checkbox]:checked),
+main .dots3:has(~ input[type=checkbox]:checked),
+main .dots4:has(~ input[type=checkbox]:checked) {
+  display: none;
+}
+main .extra1:has(~ input[type=checkbox]:checked),
+main .extra2:has(~ input[type=checkbox]:checked),
+main .extra3:has(~ input[type=checkbox]:checked),
+main .extra4:has(~ input[type=checkbox]:checked) {
+  display: inline;
+  text-align: justify;
+}
 @media only screen and (max-width: 480px) {
   main .imgfloat {
     width: 100%;
@@ -88,6 +122,18 @@ main .imagentel {
     width: 15vw;
     min-width: 0;
     max-width: 200px;
+  }
+  main .extra1, main .extra2, main .extra3, main .extra4 {
+    display: inline;
+  }
+  main .dots1, main .dots2, main .dots3, main .dots4 {
+    display: none;
+  }
+  main input[type=checkbox] {
+    display: none;
+  }
+  main label {
+    display: none;
   }
 }
 main .accordion-header {

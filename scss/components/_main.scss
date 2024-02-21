@@ -3,13 +3,13 @@ main {
   h1 {
     text-transform: uppercase;
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
   }
-  section{
+  section {
     background-color: rgb(233, 232, 232);
     border-radius: 1.5vw;
-    div{
+    div {
       background-color: rgb(255, 255, 255);
       padding: 3px;
     }
@@ -40,6 +40,45 @@ main {
     width: 50px;
   }
 
+  .extra1, .extra2, .extra3, .extra4{
+    display: none;
+  }
+
+  input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+  }
+  label {
+    position: relative;
+    padding: 1em;
+    background-color: #252850;
+    color: white;
+    cursor: pointer;
+  }
+
+  label::before {
+    content: "MAS";
+  }
+
+  input[type="checkbox"]:checked ~ label::before {
+    content: "MENOS";
+  }
+  .dots1:has(~ input[type="checkbox"]:checked), 
+  .dots2:has(~ input[type="checkbox"]:checked), 
+  .dots3:has(~ input[type="checkbox"]:checked), 
+  .dots4:has(~ input[type="checkbox"]:checked){
+    display: none;
+  }
+  .extra1:has(~ input[type="checkbox"]:checked),
+  .extra2:has(~ input[type="checkbox"]:checked),
+  .extra3:has(~ input[type="checkbox"]:checked),
+  .extra4:has(~ input[type="checkbox"]:checked) {
+    display: inline;
+    text-align: justify;
+  }
+
+
   @media only screen and (max-width: nth($tamanosPantalla,1)) {
     .imgfloat {
       @include ancho(100%, 200px, 600px);
@@ -67,13 +106,24 @@ main {
     .imgarea {
       @include ancho(15vw, 0, 200px);
     }
+    .extra1, .extra2, .extra3, .extra4{
+      display: inline;
+    }
+    .dots1, .dots2, .dots3 , .dots4{
+      display: none;
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+    label {
+      display: none;
+    }
   }
 
-  .accordion-header{
+  .accordion-header {
     --bs-accordion-active-color: none;
     --bs-accordion-active-bg: rgb(233, 232, 232);
     --bs-accordion-btn-focus-border-color: rgb(233, 232, 232);
     --bs-accordion-btn-focus-box-shadow: none;
   }
-
 }
